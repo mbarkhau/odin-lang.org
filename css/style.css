@@ -322,7 +322,7 @@ article table td, article table th {
 
 .wrapper {
   display: block;
-  padding: 0 1em 1em;
+  padding: 1em;
   max-width: 60em;
   margin: 0 auto;
 }
@@ -350,4 +350,17 @@ article table td, article table th {
 
 .help-sponsor p {
   text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(1);
+    background-color: #fff;
+  }
+  body {
+    color: #111;
+  }
+  .wrapper {
+    background-color: #fff;
+  }
 }
